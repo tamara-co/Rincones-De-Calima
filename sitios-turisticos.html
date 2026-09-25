@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sitios Turísticos - Calima</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #ffff, #ffff);
+      color: #1f2d3d;
+    }
+
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgb(153, 114, 66);
+      padding: 14px 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-principal {
+      display: inline-block;
+      background: #3D2314;
+      color: #ffff;
+      font-weight: bold;
+      padding: 10px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-principal:hover {
+      background: #865133;
+      transform: translateY(-2px);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px 60px;
+    }
+
+    .titulo-principal {
+      text-align: center;
+      margin: 30px 0 40px;
+      color: #49352A;
+      font-size: 2.5rem;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 18px;
+    }
+
+    .card h2 {
+      color: #49352A;
+      margin-bottom: 12px;
+      font-size: 1.5rem;
+    }
+
+    .card p {
+      margin-bottom: 10px;
+      line-height: 1.6;
+      color: #3b4a5a;
+    }
+
+    .card strong {
+      color: #49352A;
+    }
+  </style>
+</head>
+<body>
+  <header class="top-bar">
+    <a class="btn-principal" href="Menú.html">Menú principal</a>
+  </header>
+
+  <main id="menu-principal" class="container">
+    <h1 class="titulo-principal">Sitios Turísticos de Calima</h1>
+
+    <section class="menu-grid">
+      <article class="card">
+        <img src="imagenes/jose.jpg" alt="Mirador del Calima" />
+        <div class="card-content">
+          <h2>Cascadas José Natillas</h2>
+          <p>Un fascinante circuitos de más de 10 casscadass escondidass entre las montañas. Es un plan de caminata muy cotizado que puedes coordinar a través de operadores locales autorizados como <b> Conexión Eco Calima</b> desde instagram</p>
+          <p><strong>Dirección:</strong> Vereda La Gavia / Sector Remolino</p>
+          <p><strong>Horario:</strong> Lunes a Domingo de 8:00 a.m. a 4:30 p.m.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagenes/parque.jpg" alt="Parque Principal de Calima" />
+        <div class="card-content">
+          <h2>Parque Principal</h2>
+          <p>Ubicado en el centro urbano de El Darién. Es un parque lleno de vida, perfecto para caminar al caer la tarde, apreciar su arquictectura típica del Valle del Cauca y probar la gasstronomia local o un buen "migao"</p>
+          <p><strong>Dirección:</strong> Calle 10 entre Carreras 6 y 7, Zona Centro, Calima El Darién, Valle del Cauca..</p>
+          <p><strong>Horario:</strong> Abierto todo el día.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagenes/museo.jpg" alt="Museo Arqueológico Calima INCIVA" />
+        <div class="card-content">
+          <h2>Museo Arqueológico Calima INCIVA</h2>
+          <p>Situado a solo dos cuadras de  la plaza principal. Es una parada cultural para admirar piezas prehispánicas originales de oro y cerámica pertenecientes a las sociedades que habitaron la región.  </p>
+          <p><strong>Dirección:</strong> Calle 10 #12-50</p>
+           <p><strong>Teléfono:</strong> +57 318 734 8235</p>
+          <p><strong>Horario:</strong> Lunes a Viernes: 8:00 a.m. a 4:00 p.m.<br>Sábados: 10:00 a.m. a 3:00 p.m.<br>Domingos y Festivos: 10:00 a.m. a 2:00 p.m.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagenes/beta.jpg" alt="Cascada la Betania" />
+        <div class="card-content">
+          <h2>Cascada la Betania</h2>
+          <p>Un hermoso rincón natural rodeado de densa vegetación. Cuenta con un sendero ecológico ideal para el denserismo y el avistamiento de aves, finalizando en un refrescante pozo natural para bañarse.</p>
+          <p><strong>Dirección:</strong> Vereda La Betania</p>
+          <p><strong>Teléfono:</strong> +57 318 693 4291 / +57 315 487 9054</p>
+          <p><strong>Horario:</strong> Lunes a Domingo de 8:00 a.m. a 5:00 p.m.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagenes/encanto.jpg" alt="Cascadas el encanto" />
+        <div class="card-content">
+          <h2>Cascadas el encanto</h2>
+          <p>Son caídas de agua helada y cristalina inmersas en un frondoso bosque de niebla tropical. Un destino natural perfecto para hacer senderismo, refrescarse en sus pozos y desconectarse en total tranquilidad.</p>
+          <p><strong>Dirección:</strong> bosque de la niebla (vereda critalina).</p>
+          <p><strong>Horario:</strong> Lunes a Domingo: 8:00 a.m. a 4:30 p.m.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

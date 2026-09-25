@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurantes</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #f5efe7, #e9f3ff);
+        color: #222;
+      }
+
+      .topbar {
+        padding: 20px 30px 0;
+      }
+
+      .btn-principal {
+        display: inline-block;
+        text-decoration: none;
+        background: #C96F4A;
+        color: white;
+        font-weight: bold;
+        padding: 12px 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        transition: 0.3s ease;
+      }
+
+      .btn-principal:hover {
+        background: #C96F4A;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 30px auto;
+        padding: 0 20px 40px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #49352A;
+        font-size: 2.5rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 25px;
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+      }
+
+      .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .content {
+        padding: 18px 18px 22px;
+      }
+
+      .content h2 {
+        margin: 0 0 10px;
+        color: #49352A;
+        font-size: 1.5rem;
+      }
+
+      .content p {
+        margin: 8px 0;
+        line-height: 1.5;
+        color: #444;
+      }
+
+      .label {
+        font-weight: bold;
+        color: #49352A;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <a href="Menú.html" class="btn-principal">Menú principal</a>
+    </div>
+
+    <div class="container">
+      <h1>Restaurantes</h1>
+
+      <div class="grid">
+        <article class="card">
+          <img src="imagenes/fogon.jpg" alt="El Fogón de la Abuela" />
+          <div class="content">
+            <h2>El Fogón de la Abuela</h2>
+            <p><span class="label">Descripción:</span> Su comida ofrece sabores caseros típicos como sancochos y chuletas vallunas en porciones generosas y llenas de tradición. El ambiente es sencillo, familiar y acogedor, perfecto para un almuerzo relajado en el pueblo.</p>
+            <p><span class="label">Dirección:</span> Calle 10 # 5-28, Barrio Centro, Calima El Darién, Valle del Cauca.</p>
+            <p><span class="label">Horario:</span> Lunes a Domingo: 8:00 a.m. a 6:00 p.m</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="imagenes/mera.jpg" alt="Meraki" />
+          <div class="content">
+            <h2>Meraki</h2>
+            <p><span class="label">Descripción:</span> Ofrece una propuesta gastronómica moderna y variada que combina platos internacionales, comidas rápidas gourmet y opciones de autor. Su ambiente es contemporáneo, fresco y acogedor, ideal tanto para una cena tranquila como para compartir bebidas.</p>
+            <p><span class="label">Dirección:</span> Cra. 6 # 9-45 (cerca al parque principal).</p>
+            <p><span class="label">Horario:</span>Miércoles a Lunes: 12:00 p.m. a 10:00 p.m. (fines de semana hasta las 11:00 p.m.)</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="imagenes/meson.jpg" alt="Meson ilama" />
+          <div class="content">
+            <h2>Meson ilama</h2>
+            <p><span class="label">Descripción:</span> Su menú destaca por la gastronomía típica colombiana y de la región, especializándose en carnes a la parrilla, sancochos y trucha fresca. El ambiente es campestre, amplio y tradicional, perfecto para disfrutar en familia rodeado de naturaleza.</p>
+            <p><span class="label">Dirección:</span> Entrada principal a Calima El Darién (vía al Lago Calima), Valle del Cauca.</p>
+            <p><span class="label">Horario:</span> Viernes a Domingo y Festivos: 8:30 a.m. a 6:00 p.m.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="imagenes/paisa.jpg" alt="Arriero Paisa" />
+          <div class="content">
+            <h2>Arriero Paisa</h2>
+            <p><span class="label">Descripción:</span> Especializado en la abundante cocina paisa y colombiana, su fuerte son las tradicionales bandejas paisas, frijoladas y carnes a la vista. Mantiene un ambiente rústico, folclórico y muy familiar que evoca la cultura arriera del país.</p>
+            <p><span class="label">Dirección:</span> Cra. 7 # 10-15 (a pocas cuadras del parque principal).</p>
+            <p><span class="label">Horario:</span> Lunes a Domingo: 7:30 a.m. a 8:00 p.m.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="imagenes/sala.jpg" alt="salamina parrila" />
+          <div class="content">
+            <h2>Salamina Parrilla</h2>
+            <p><span class="label">Descripción:</span> Su fuerte son los cortes de carne a la parrilla, chorizos artesanales, picadas y hamburguesas gourmet con excelente término. El ambiente es acogedor, de estilo rústico y casual, ideal para cenar en pareja o compartir con amigos al caer la tarde.</p>
+            <p><span class="label">Dirección:</span> : Cra. 5 # 8-20 (zona céntrica), Calima El Darién, Valle del Cauca..</p>
+            <p><span class="label">Horario:</span> Viernes a Domingo y Festivos: 10:00 a.m. a 6:30 p.m.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="imagenes/sabor.jpg" alt="El Sabor de Aquí" />
+          <div class="content">
+            <h2>El Sabor de Aquí</h2>
+            <p><span class="label">Descripción:</span> Ofrece una sazón casera con menús ejecutivos y platos típicos vallunos muy económicos que cambian a diario. Su ambiente es sencillo, popular y concurrido, enfocado en una atención rápida para el almuerzo diario de locales y visitantes.</p>
+            <p><span class="label">Dirección:</span> Cl. 9 # 6-30 (zona céntrica), Calima El Darién, Valle del Cauca.</p>
+            <p><span class="label">Horario:</span> Jueves a Domingo y Festivos: 12:00 p.m. a 10:00 p.m.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

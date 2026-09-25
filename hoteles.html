@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoteles</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #ffff, #fff4e3);
+        color: #1d1d1d;
+      }
+
+      .top-bar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: rgb(153, 114, 66);
+        padding: 14px 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      }
+
+      .btn-principal {
+        display: inline-block;
+        background: #3D2314;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 18px;
+        border-radius: 10px;
+        transition: 0.3s ease;
+      }
+
+      .btn-principal:hover {
+        background: #865133;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 30px auto;
+        padding: 0 20px 40px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #49352A;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+      }
+
+      .hotel-card {
+        background: #fff;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+
+      .hotel-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 14px 25px rgba(0, 0, 0, 0.12);
+      }
+
+      .hotel-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .hotel-info {
+        padding: 18px 18px 22px;
+      }
+
+      .hotel-info h2 {
+        margin-top: 0;
+        margin-bottom: 12px;
+        color: #49352A;
+        font-size: 1.5rem;
+      }
+
+      .hotel-info p {
+        margin: 8px 0;
+        line-height: 1.5;
+        color: #334;
+      }
+
+      .label {
+        font-weight: bold;
+        color: #49352A;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="top-bar">
+      <a class="btn-principal" href="Menú.html">Menú principal</a>
+    </header>
+
+    <main class="container">
+      <h1>Hoteles</h1>
+
+      <section class="grid">
+        <article class="hotel-card">
+          <img src="imagenes/comfandi.webp" alt=" Comfandi Lago Calima" />
+          <div class="hotel-info">
+            <h2>Centro vacacional Comfandi Lago Calima</h2>
+            <p><span class="label">Dirección:</span> Via Madroñal Palermo, Calima - Darién, Calima, Valle del Cauca</p>
+            <p><span class="label">Teléfono:</span> 318 553 4365</p>
+            <p><span class="label">Horario:</span> Martes a domingo: 8:00 a.m. a 5:00 p.m <br /> Lunes: Abren de 10:00 a.m. a 5:00 p.m. únicamente si es festivo</p>
+            <p>Un hotel moderno con piscinas,toboganes, restaurante y habitaciones con vista al jardín, ideal para descansar en familia.</p>
+          </div>
+        </article>
+
+        <article class="hotel-card">
+          <img src="imagenes/cuspide.jpg" alt="Hotel Vista Real" />
+          <div class="hotel-info">
+            <h2>Hotel y Restaurante la Cúspide</h2>
+            <p><span class="label">Dirección:</span> Km 10, Vereda Llanitos, Calima El Darién, Valle del Cauca, Colombia.</p>
+            <p><span class="label">Teléfono:</span>  315 3075351 </p>
+            <p><span class="label">Horario:</span> Abierta las 24 horas, los 7 días de la semana.</p>
+            <p> un acogedor refugio natural con una excelente vista panorámica al Lago Calima en el Valle del Cauca. Es ideal para descansar, disfrutar de la naturaleza y desconectarse de la rutina.</p>
+          </div>
+        </article>
+
+        <article class="hotel-card">
+          <img src="imagenes/mysti.jpg" alt="Hotel Aurora Plaza" />
+          <div class="hotel-info">
+            <h2> Mystic Paradise</h2>
+            <p><span class="label">Dirección:</span>Km 10, Vereda Llanitos, Calima El Darién, Valle del Cauca, Colombia.</p>
+            <p><span class="label">Teléfono:</span>   313 5561468  </p>
+            <p><span class="label">Horario:</span> Atienden todos los días de 8:00 a. m. a 10:00 p. m. para atención al cliente y registro de huéspedes.</p>
+            <p>¡Desconéctate en el Lago Calima! 🌅 En Mystic Paradise, vive la mejor experiencia de glamping, playa y deportes acuáticos.</p>
+          </div>
+        </article>
+
+        <article class="hotel-card">
+          <img src="imagenes/veleros.jpg" alt="Hotel Costa Azul" />
+          <div class="hotel-info">
+            <h2>Hostelería Los Veleros</h2>
+            <p><span class="label">Dirección:</span>Via Madroñal, Darién, Palermo, Calima, Valle del Cauca</p>
+            <p><span class="label">Teléfono:</span>  +57 315 4911568</p>
+            <p><span class="label">Horario:</span>  Abierta las 24 horas, los 7 días de la semana,</p>
+            <p> ¡El confort que mereces en el Lago Calima! En la Hostería Los Veleros disfruta de piscina, sauna y un espectacular gastrobar flotante. El plan familiar ideal. ¡Reserva hoy!</p>
+          </div>
+        </article>
+
+        <article class="hotel-card">
+          <img src="imagenes/brisas.jpg" alt="Hotel Montaña Serena" />
+          <div class="hotel-info">
+            <h2>Hotel Brisas Del Calima</h2>
+            <p><span class="label">Dirección:</span> Carrera 7 # 7-50, Calima El Darién, Valle del Cauca (A tan solo 3 minutos de la entrada #5 del Lago Calima).</p>
+            <p><span class="label">Teléfono:</span>  +57 315 5717104. </p>
+            <p><span class="label">Horario:</span> Disponible las 24 horas, los 7 días de la semana.</p>
+            <p>¡Tu descanso ideal en Calima! En el Hotel Brisas del Calima disfruta de cómodas habitaciones, piscina y desayuno incluido, a solo 3 minutos del lago. ¡Reserva ya! .</p>
+          </div>
+        </article>
+
+        <article class="hotel-card">
+          <img src="imagenes/alta.jpg" alt="Hotel San Jorge" />
+          <div class="hotel-info">
+            <h2>Hotel Alta Vista Del Lago</h2>
+            <p><span class="label">Dirección:</span>  Carrera 7 # 6-16, Calima El Darién, Valle del Cauca.</p>
+            <p><span class="label">Teléfono:</span>   +57 314 6301685 o al +57 315 4330535</p>
+            <p><span class="label">Horario:</span> Abierta las 24 horas, los 7 días de la semana</p>
+            <p>En el Hotel Altavista del Lago disfruta de suites con balcón, parqueadero privado y desayuno incluido a minutos del lago. ¡Reserva hoy!</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

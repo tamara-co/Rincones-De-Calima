@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitios de Emergencia</title>
+    <style>
+      :root {
+        --primary: #49352A;
+        --secondary: #C96F4A;
+        --bg: #FFF4E3;
+        --card: #f3e5c8;
+        --text: #49352A;
+        --muted: #3b4a5a;
+        --shadow: 0 10px 25px rgba(13, 59, 102, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(180deg, #edf5ff 0%, #ffff 100%);
+        color: var(--text);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 24px 20px 50px;
+      }
+
+      .top-bar {
+        margin-bottom: 24px;
+      }
+
+      .btn-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        background:#C96F4A ;
+        color: #ffffff;
+        font-weight: 700;
+        padding: 12px 18px;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        transition: transform 0.2s ease;
+      }
+
+      .btn-back:hover {
+        transform: translateY(-1px);
+      }
+
+      h1 {
+        margin: 0 0 26px;
+        text-align: center;
+        font-size: 2.2rem;
+        color: var(--primary);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 22px;
+      }
+
+      .card {
+        background: var(--card);
+        border-radius: 18px;
+        padding: 22px 20px;
+        box-shadow: var(--shadow);
+        border-top: 6px solid var(--secondary);
+      }
+
+      .icon {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      .card h2 {
+        margin: 0 0 10px;
+        font-size: 1.5rem;
+        color: var(--primary);
+      }
+
+      .card p {
+        margin: 8px 0;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .label {
+        font-weight: 700;
+        color: var(--text);
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 1.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-bar">
+        <a href="Menú.html" class="btn-back"> Menú principal</a>
+      </div>
+
+      <h1>Sitios de Emergencia</h1>
+
+      <div class="grid">
+        <div class="card">
+          <div class="icon">🚓</div>
+          <h2>Policía</h2>
+          <p><span class="label">Dirección:</span> Calle 10 # 6-25</p>
+          <p><span class="label">Horario:</span> Lunes a domingo, 24 horas</p>
+          <p><span class="label">Teléfono:</span> 317 260 7745</p>
+          <p>Atención inmediata para seguridad ciudadana, reportes de emergencia y apoyo en caso de incidentes.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🛡️</div>
+          <h2>Defensa Civil</h2>
+          <p><span class="label">Dirección:</span> calle 10 # 6-25</p>
+          <p><span class="label">Horario:</span>  Lunes a domingo, 24 horas</p>
+           <p><span class="label">Teléfono:</span> 321 208 7400</p>
+          <p>Respuesta ante desastres, evacuaciones, atención de riesgos naturales y apoyo comunitario.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🏥</div>
+          <h2>Hospital</h2>
+          <p><span class="label">Dirección:</span> Calle 11 # 3-04</p>
+          <p><span class="label">Horario:</span> 24 horas, todos los días</p>
+           <p><span class="label">Teléfono:</span> 602 239 5008</p>
+          <p>Servicio de urgencias, atención médica general, apoyo de especialistas y transferencia de pacientes.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🚒</div>
+          <h2>Bomberos</h2>
+          <p><span class="label">Dirección:</span> Calle 7 # 7-53 (Barrio Obrero)</p>
+          <p><span class="label">Horario:</span> Lunes a domingo, 24 horas</p>
+           <p><span class="label">Teléfono:</span> 315 417 0578</p>
+          <p>Atención ante incendios, rescates, accidentes y apoyo en situaciones de riesgo para la comunidad.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
